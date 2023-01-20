@@ -813,6 +813,10 @@ img {
 
 /* 手机*/
 @media screen and (max-width: 950px) {
+  .light-box {
+    display: none;
+  }
+
   .col>span {
     visibility: hidden;
   }
