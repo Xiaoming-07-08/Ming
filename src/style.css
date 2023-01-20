@@ -1,4 +1,4 @@
-/*  */
+
 :root {
   /* 默认背景色 */
   --backColor: #fff;
@@ -14,7 +14,7 @@
   --fontColor: #00283a;
   --mainColor: #ff8181;
   --bagColor: #02162b;
-  --HomeBackImg: url('@/assets/img/back/aitx6-0og08.webp');
+  --HomeBackImg: url('@/assets/img/back/black.webp');
 
   /*blog*/
   /* Light Theme Variables */
