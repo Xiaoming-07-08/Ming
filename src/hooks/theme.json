@@ -1,0 +1,29 @@
+{
+    "black": {
+        "--backColor": "#fff",
+        "--borderline": "#00283a",
+        "--headerCOlor": "#00283a",
+        "--headerhover": "rgb(0, 40, 58,.8)",
+        "--headerFont": "#fff",
+        "--fontColor": "#00283a",
+        "--mainColor": "#050404",
+        "--bagColor": "#02162b",
+        "--HomeBackImg": " url('/src/assets/img/back/black.webp')",
+        "--SwitchBgColor": "#fff",
+        "--SwitchBtnColor": "#00283a"
+    },
+    "white": {
+        "--backColor": "#fff",
+        "--borderline": "#fff",
+        "--headerCOlor": "#fff",
+        "--headerhover": "rgb(255, 255, 255,.8)",
+        "--headerFont": "#00283A",
+        "--fontColor": "#fff",
+        "--mainColor": "#ff8181",
+        "--bagColor": "#f4f5f7",
+        "--HomeBackImg": " url('/src/assets/img/back/white.jpg')",
+        "color-text": "#333332",
+        "--SwitchBgColor": "#FF8181",
+        "--SwitchBtnColor": "#fff"
+    }
+}
