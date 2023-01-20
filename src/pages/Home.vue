@@ -1,6 +1,87 @@
 <template>
-  <!-- 主要页面 -->
-  <!-- 顶部栏 -->
+  <!-- 灯笼 -->
+  <div class="light-box" v-show="!LightFlag">
+    <div class="deng-box2">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">年</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <div class="deng-box3">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">新</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <div class="deng-box1">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">乐</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <div class="deng-box">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">快</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 顶部导航 -->
+  <div class="navigation" :class="{ active: !LightFlag }">
+    <div class="nav-titleBox co zz">
+      <!-- 占位符 -->
+      <div class="co-left"></div>
+
+      <!-- 主页标题 -->
+      <div class="co-right" v-show="$route.fullPath == '/home/index'">
+        <span class="titleBox-tag">HI MY NEW FRIEND!</span>
+        <h1>
+          Hello <br />
+          I`m WangXiaoMing
+        </h1>
+        <a class="buttom navbtn" href="#next-one">了解一下 </a>
+      </div>
+      <!-- 项目页标题 -->
+      <div class="co-right" v-show="$route.fullPath == '/home/project'">
+        <span class="titleBox-tag">PORTFOLIO!</span>
+        <h1>Don’t let the past steal your present</h1>
+        <a class="buttom navbtn" href="#next-one">了解一下这些项目吧 </a>
+      </div>
+    </div>
+  </div>
   <div class="header borderafter">
     <!-- 返回按钮 -->
     <a style="position: absolute; left: 50px" href="javascript:history.back()">
@@ -63,7 +144,6 @@
         </div>
       </div>
     </div>
-
   </div>
 
   <router-view></router-view>
@@ -77,6 +157,7 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 onMounted(() => {
   LightFlag.value = localStorage.getItem("theme") == "black" ? false : true;
+  initId();
 });
 // 主题切换
 const isBlack = ref(true);
@@ -89,7 +170,7 @@ const changeBlack = () => {
 };
 
 const navList = [
-  { id: "01", name: "主页", path: "/home/index" },
+  { id: "01", name: "主页", path: "/home/index", titleTag: "" },
   { id: "02", name: "项目", path: "/home/project" },
   { id: "03", name: "经验", path: "/home/experience" },
   { id: "04", name: "联系", path: "/home/contact" },
@@ -98,7 +179,15 @@ const navList = [
 
 let activeId = ref("00");
 const changeId = (id) => {
-  activeId.value = id;
+  activeId = id;
+};
+const initId = () => {
+  console.log(router.currentRoute.value.path);
+  let currentNav = navList.find((item) => {
+    return item.path == router.currentRoute.value.path;
+  });
+  activeId = currentNav.id;
+  console.log(1);
 };
 </script>
 
@@ -109,7 +198,7 @@ const changeId = (id) => {
   margin-left: 5px;
   margin-top: 3px;
 }
-.col{
+.col {
   z-index: 999;
 }
 </style>

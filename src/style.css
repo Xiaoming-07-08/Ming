@@ -1,4 +1,3 @@
-
 :root {
   /* 默认背景色 */
   --backColor: #fff;
@@ -15,8 +14,8 @@
   --mainColor: #ff8181;
   --bagColor: #02162b;
 
-  --LightBgc:url('@/assets/img/back/white.jpg');
-  --DarkBgc:url('@/assets/img/back/white.jpg');
+  --LightBgc: url('@/assets/img/back/white.jpg');
+  --DarkBgc: url('@/assets/img/back/blackBg.png');
 
   /*blog*/
   /* Light Theme Variables */
@@ -29,7 +28,7 @@
   /* Dark Theme Variables */
   --color-text-dark: #FAF4E5;
   --color-background-dark: #8395CD;
-  
+
 }
 
 .light-theme {
@@ -279,8 +278,8 @@ img {
 /* 导航 */
 /* 黑色主题背景 */
 .navigation.active {
-  /* background-image: url("@/pages/img/back/aitx6-0og08.webp") !important; */
-  background-image: var(--DarkBgc);
+  background-image: var(--DarkBgc) !important;
+  /* background-image: var(--DarkBgc) !important; */
 }
 
 /* 默认主题 */

@@ -16,4 +16,6 @@ Okay,let's go！(●'◡'●)
     yarn
     yarn run dev
 
+    git config --global http.sslVerify "false"
+
 

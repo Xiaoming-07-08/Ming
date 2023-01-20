@@ -1,19 +1,6 @@
 <template>
   <div class="box">
-    <!-- 顶部导航 -->
-    <div class="navigation">
-      <div class="nav-titleBox co zz">
-        <!-- 占位符 -->
-        <div class="co-left"></div>
 
-        <!-- 标题 -->
-        <div class="co-right">
-          <span class="titleBox-tag">PORTFOLIO!</span>
-          <h1>Don’t let the past steal your present</h1>
-          <a class="buttom navbtn" href="#next-one">了解一下这些项目吧 </a>
-        </div>
-      </div>
-    </div>
     <!-- 主要修改部分 -->
     <div class="content zz">
       <!-- 占位符 -->
@@ -56,7 +43,7 @@
                 ></path>
               </svg>
             </a>
-            <a title="github:wttAndroid" href="https://gitee.com/wttAndroid">
+            <a title="" href="#">
               <svg
                 t="1649145950732"
                 class="icon"
@@ -146,104 +133,82 @@
       <div class="co-right" id="next-one">
         <div class="content-li li1">
           <div class="li1-box">
-            <a class="li1-box-item carbox" href="https://lab508.gitee.io/">
-              <img src="@/assets/img/project/508.png" alt="" />
+            <a class="li1-box-item carbox" href="#">
+              <img src="@/assets/img/box1.gif" alt="" />
               <div class="boxitem-title">
                 <h6>武汉城市职业学院</h6>
                 <span>303工作室</span>
               </div>
             </a>
+            <a class="li1-box-item carbox" href="#">
+              <img src="@/assets/img/box2.gif" alt="" />
+              <div class="boxitem-title">
+                <h6>响应式设计作业</h6>
+                <span>快乐假期</span>
+              </div>
+            </a>
+
             <a
               class="li1-box-item carbox"
-              href="http://123.56.144.92/music/index.html#/find"
+              href="http://39.107.109.193:8102/"
             >
-              <img src="@/assets/img/project/wangyiyun.png" alt="" />
+              <img src="@/assets/img/box3.gif" alt=""  />
               <div class="boxitem-title">
-                <h6>基于vue的网易云播放器</h6>
-                <span>网易云播放器</span>
+                <h6>Vue,springBoot</h6>
+                <span>森林草原火灾防控平台</span>
               </div>
             </a>
             <a
               class="li1-box-item carbox"
-              href="https://wttandroid.gitee.io/wttandroid.github.io/"
+              href="#"
             >
-              <img src="@/assets/img/project/wangzhan.png" alt="" />
+              <img src="@/assets/img/box4.gif" alt="" title="未上线" />
               <div class="boxitem-title">
-                <h6>bootsrap搭建个人简历网站</h6>
-                <span>个人简历网站</span>
+                <h6>Three.js,MQTT</h6>
+                <span>无人机防控虚拟场景</span>
               </div>
             </a>
             <a
               class="li1-box-item carbox"
-              href="https://gitee.com/wttAndroid/book_admin"
+              href="#"
             >
-              <img src="@/assets/img/project/tushu.png" alt="" />
+              <img src="@/assets/img/box8.gif" alt="" title="未上线" />
               <div class="boxitem-title">
-                <h6>Vue,NodeJs图书管理系统前后端</h6>
-                <span>图书管理系统</span>
+                <h6>诗词汇</h6>
+                <span>享受诗词的美</span>
               </div>
             </a>
             <a
               class="li1-box-item carbox"
-              href="https://gitee.com/wttAndroid/campus-integrated-services"
+              href="#"
             >
-              <img src="@/assets/img/project/uniapp.png" alt="" />
+              <img src="@/assets/img/box7.gif" alt="" title="未上线" />
               <div class="boxitem-title">
-                <h6>校园综合服务uniapp小程序</h6>
-                <span>uniapp小程序</span>
+                <h6>明亮之家</h6>
+                <span>视频播放网站</span>
               </div>
             </a>
             <a
               class="li1-box-item carbox"
-              href="https://gitee.com/wttAndroid/forestmanage"
+              href="#"
             >
-              <img src="@/assets/img/project/guanli.png" alt="" />
+              <img src="@/assets/img/box3.gif" alt="" title="未上线" />
               <div class="boxitem-title">
-                <h6>uniapp校园综合服务后台管理系统</h6>
-                <span>后台管理系统</span>
-              </div>
-            </a>
-            <a
-              class="li1-box-item carbox"
-              href="https://gitee.com/wttAndroid/vuechat"
-            >
-              <img src="@/assets/img/box8.gif" alt="" />
-              <div class="boxitem-title">
-                <h6>vue一对一直聘</h6>
-                <span>招聘</span>
-              </div>
-            </a>
-            <a
-              class="li1-box-item carbox"
-              href="https://gitee.com/wttAndroid/xyy_project"
-            >
-              <img src="@/assets/img/box7.gif" alt="" />
-              <div class="boxitem-title">
-                <h6>vue校园Q约项目</h6>
-                <span>校园Q约</span>
-              </div>
-            </a>
-            <a
-              class="li1-box-item carbox"
-              href="https://gitee.com/wttAndroid/shop_admin"
-            >
-              <img src="@/assets/img/box3.gif" alt="" />
-              <div class="boxitem-title">
-                <h6>vue电商商品管理系统前端</h6>
-                <span>vue电商</span>
+                <h6>学习空间</h6>
+                <span>将学习记录下来</span>
               </div>
             </a>
             <a class="li1-box-item carbox" title="未上线">
               <img src="@/assets/img/box4.gif" alt="" />
               <div class="boxitem-title">
-                <h6>Android二维码生成器</h6>
-                <span>二维码生成器</span>
+                <h6>在路上...</h6>
+                <span>敬请期待</span>
               </div>
             </a>
           </div>
         </div>
         <div class="borderbotm"></div>
-        <div class="carbox copybottm">©2022 wttandroid</div>
+        <div class="carbox copybottm">©2023 仍在继续</div>
       </div>
     </div>
   </div>
@@ -272,5 +237,4 @@ const ScrollStick = () => {
 
 <style scoped>
 @import "./index.css";
-
 </style>

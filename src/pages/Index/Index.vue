@@ -1,21 +1,5 @@
 <template>
-  <!-- 顶部导航 -->
-  <div class="navigation">
-    <div class="nav-titleBox co zz">
-      <!-- 占位符 -->
-      <div class="co-left"></div>
 
-      <!-- 标题 -->
-      <div class="co-right">
-        <span class="titleBox-tag">HI MY NEW FRIEND!</span>
-        <h1>
-          Hello<br />
-          I`m WangXiaoMing
-        </h1>
-        <a class="buttom navbtn" href="#next-one">了解一下 </a>
-      </div>
-    </div>
-  </div>
 
   <!-- 主要内容 -->
   <div class="container content zz">
@@ -59,7 +43,7 @@
               ></path>
             </svg>
           </a>
-          <a title="github:wttAndroid" href="https://gitee.com/wttAndroid">
+          <a title="" href="#">
             <svg
               t="1649145950732"
               class="icon"
@@ -174,8 +158,8 @@
         </h3>
         <div class="carbox li2-box">
           <blockquote>
-            I hope I could keep advancing and let my life shine as a precious
-            stone.and let my life shine as a precious stone.
+            When something is important enough,you do it even if the odds are
+            not in your favor
           </blockquote>
         </div>
       </div>
@@ -433,128 +417,9 @@
         </div>
       </div>
 
-      <!-- 我的专业教室 -->
-      <div class="content-li li5">
-        <h3>
-          <span>我的专业教师</span>
-          <div class="borderbotm"></div>
-          <span>05</span>
-        </h3>
-        <div class="li5-box">
-          <div class="left buttonsty" id="leftimg">
-            <span>
-              <svg
-                t="1649148549783"
-                class="icon"
-                viewBox="0 0 1024 1024"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                p-id="22757"
-                width="25"
-                height="25"
-              >
-                <path
-                  d="M325.399273 235.124364L600.157091 488.727273 325.399273 742.353455a34.909091 34.909091 0 1 0 47.36 51.316363l302.545454-279.272727a34.909091 34.909091 0 0 0 0-51.316364l-302.545454-279.272727a34.909091 34.909091 0 1 0-47.36 51.316364"
-                  fill="#ffffff"
-                  p-id="22758"
-                  data-spm-anchor-id="a313x.7781069.0.i41"
-                  class="selected"
-                ></path>
-              </svg>
-            </span>
-          </div>
-          <div class="right buttonsty" id="rightimg">
-            <span>
-              <svg
-                t="1649148517782"
-                class="icon"
-                viewBox="0 0 1024 1024"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                p-id="21306"
-                width="25"
-                height="25"
-              >
-                <path
-                  d="M675.328 765.626182L400.570182 512l274.757818-253.626182a34.909091 34.909091 0 1 0-47.36-51.316363l-302.545455 279.272727a34.909091 34.909091 0 0 0 0 51.316363l302.545455 279.272728a34.909091 34.909091 0 1 0 47.36-51.316364"
-                  fill="#ffffff"
-                  p-id="21307"
-                  data-spm-anchor-id="a313x.7781069.0.i34"
-                  class="selected"
-                ></path>
-              </svg>
-            </span>
-          </div>
-
-          <div class="li5box-ul" id="li5boxul">
-            <div class="li5box-car carbox">
-              <img src="@/assets/img/toux.jpg" alt="" />
-              <h3>张老师</h3>
-              <span>Android</span>
-              <p>我业精于勤而荒于嬉，行成于思而毁于随。</p>
-            </div>
-            <div class="li5box-car carbox">
-              <img src="@/assets/img/toux.jpg" alt="" />
-              <h3>史老师</h3>
-              <span>web前端开发</span>
-              <p>青，取之于蓝而青于蓝; 冰，水为之而寒于水。</p>
-            </div>
-            <div class="li5box-car carbox">
-              <img src="@/assets/img/toux.jpg" alt="" />
-              <h3>杜老师</h3>
-              <span>javaweb</span>
-              <p>有志者事竟成。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- 最近完成 -->
-      <div class="content-li li6">
-        <h3>
-          <span>最近完成的案例 </span>
-          <div class="borderbotm"></div>
-          <span>06</span>
-        </h3>
-        <div class="li6-box">
-          <div class="carbox">
-            <a class="imgbox" href="http://123.56.144.92/nav/index.html">
-              <!-- <img src=" @/assets/img/project/daohanglan.png" alt="" /> -->
-            </a>
-            <div class="li6car-title">
-              导航栏:基本实现:ul/li/a:hover
-              <br /><br />2022.03.25
-              <div class="borderbotm"></div>
-              <a href="http://123.56.144.92/nav/index.html">进入浏览</a>
-            </div>
-          </div>
-          <div class="carbox">
-            <a class="imgbox" href="http://123.56.144.92/hualang/index.html">
-              <img src="@/assets/img/project/hualang.png" alt="" />
-            </a>
-            <div class="li6car-title">
-              画廊海报：基本实现:iframe/a/marquee
-              <br /><br />2022.03.18
-              <div class="borderbotm"></div>
-              <a href="http://123.56.144.92/hualang/index.html">进入浏览</a>
-            </div>
-          </div>
-          <div class="carbox">
-            <a class="imgbox" href="http://123.56.144.92/jianli/index.html">
-              <img src="@/assets/img/project/jianli.png" alt="" />
-            </a>
-            <div class="li6car-title">
-              个人简历:animation+粒子
-              <br /><br />2022.03.10
-              <div class="borderbotm"></div>
-              <a href="http://123.56.144.92/jianli/index.html">进入浏览</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="borderbotm"></div>
       <!-- 底部 -->
-      <div class="carbox copybottm">©2022 wttandroid</div>
+      <div class="carbox copybottm">©2023 仍在继续</div>
     </div>
     <div class="left"></div>
   </div>
