@@ -76,9 +76,7 @@ import { SettingFilled } from "@ant-design/icons-vue";
 import { useRouter } from "vue-router";
 const router = useRouter();
 onMounted(() => {
-  console.log(localStorage.getItem("theme"));
   LightFlag.value = localStorage.getItem("theme") == "black" ? false : true;
-  console.log(LightFlag.value);
 });
 // 主题切换
 const isBlack = ref(true);

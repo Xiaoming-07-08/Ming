@@ -14,7 +14,9 @@
   --fontColor: #00283a;
   --mainColor: #ff8181;
   --bagColor: #02162b;
-  --HomeBackImg: url('@/assets/img/back/black.webp');
+
+  --LightBgc:url('@/assets/img/back/white.jpg');
+  --DarkBgc:url('@/assets/img/back/white.jpg');
 
   /*blog*/
   /* Light Theme Variables */
@@ -27,6 +29,7 @@
   /* Dark Theme Variables */
   --color-text-dark: #FAF4E5;
   --color-background-dark: #8395CD;
+  
 }
 
 .light-theme {
@@ -277,7 +280,7 @@ img {
 /* 黑色主题背景 */
 .navigation.active {
   /* background-image: url("@/pages/img/back/aitx6-0og08.webp") !important; */
-  background-image: var(--HomeBackImg);
+  background-image: var(--DarkBgc);
 }
 
 /* 默认主题 */
@@ -287,7 +290,7 @@ img {
   background-color: transparent;
   height: 600px;
   border-radius: 20px;
-  background-image: var(--HomeBackImg);
+  background-image: var(--LightBgc);
   /* background-image: url("@/pages/img/back/a58cbbffd2aa49c1b1e99990be912f30.jpg"); */
   background-attachment: fixed;
   background-size: 100%;

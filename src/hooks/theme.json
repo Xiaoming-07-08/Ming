@@ -8,7 +8,6 @@
         "--fontColor": "#00283a",
         "--mainColor": "#050404",
         "--bagColor": "#02162b",
-        "--HomeBackImg": " url('/src/assets/img/back/black.webp')",
         "--SwitchBgColor": "#fff",
         "--SwitchBtnColor": "#00283a"
     },
@@ -21,7 +20,6 @@
         "--fontColor": "#fff",
         "--mainColor": "#ff8181",
         "--bagColor": "#f4f5f7",
-        "--HomeBackImg": " url('/src/assets/img/back/white.jpg')",
         "color-text": "#333332",
         "--SwitchBgColor": "#FF8181",
         "--SwitchBtnColor": "#fff"
