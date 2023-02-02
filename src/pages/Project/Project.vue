@@ -1,6 +1,5 @@
 <template>
   <div class="box">
-
     <!-- 主要修改部分 -->
     <div class="content zz">
       <!-- 占位符 -->
@@ -140,58 +139,51 @@
                 <span>303工作室</span>
               </div>
             </a>
-            <a class="li1-box-item carbox" href="#">
-              <img src="@/assets/img/box2.gif" alt="" />
+            <a
+              class="li1-box-item carbox"
+              href="https://happy-vacation.vercel.app/"
+              target="_blank"
+            >
+              <img src="@/assets/img/project/haapyVacation.png" alt="" />
               <div class="boxitem-title">
                 <h6>响应式设计作业</h6>
                 <span>快乐假期</span>
               </div>
             </a>
 
-            <a
-              class="li1-box-item carbox"
-              href="http://39.107.109.193:8102/"
-            >
-              <img src="@/assets/img/box3.gif" alt=""  />
+            <a class="li1-box-item carbox" href="http://39.107.109.193:8102/">
+              <img src="@/assets/img/project/donglin.png" alt="" />
               <div class="boxitem-title">
                 <h6>Vue,springBoot</h6>
                 <span>森林草原火灾防控平台</span>
               </div>
             </a>
-            <a
-              class="li1-box-item carbox"
-              href="#"
-            >
-              <img src="@/assets/img/box4.gif" alt="" title="未上线" />
+            <a class="li1-box-item carbox" href="#">
+              <img src="@/assets/img/project/AF.png" alt="" title="未上线" />
               <div class="boxitem-title">
                 <h6>Three.js,MQTT</h6>
                 <span>无人机防控虚拟场景</span>
               </div>
             </a>
-            <a
-              class="li1-box-item carbox"
-              href="#"
-            >
-              <img src="@/assets/img/box8.gif" alt="" title="未上线" />
+            <a class="li1-box-item carbox" href="#">
+              <img
+                src="@/assets/img/project/beautyPoem.png"
+                alt=""
+                title="未上线"
+              />
               <div class="boxitem-title">
                 <h6>诗词汇</h6>
                 <span>享受诗词的美</span>
               </div>
             </a>
-            <a
-              class="li1-box-item carbox"
-              href="#"
-            >
-              <img src="@/assets/img/box7.gif" alt="" title="未上线" />
+            <a class="li1-box-item carbox" href="#">
+              <img src="@/assets/img/project/liang.png" alt="" title="未上线" />
               <div class="boxitem-title">
                 <h6>明亮之家</h6>
                 <span>视频播放网站</span>
               </div>
             </a>
-            <a
-              class="li1-box-item carbox"
-              href="#"
-            >
+            <a class="li1-box-item carbox" href="#">
               <img src="@/assets/img/box3.gif" alt="" title="未上线" />
               <div class="boxitem-title">
                 <h6>学习空间</h6>
