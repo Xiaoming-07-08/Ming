@@ -111,10 +111,10 @@
  }
 
  /* 第三段 */
- .li3-box {
+ #myVideoTwo {
    position: relative;
-   min-height: 380px;
-   background-image: url("@/assets/img/videoback.jpg");
+   width: 100%;
+   height: 380px;
    background-size: 100%;
  }
 

@@ -1,4 +1,6 @@
 <template>
+
+
   <!-- 灯笼 -->
   <div class="light-box" v-show="!LightFlag">
     <div class="deng-box2">

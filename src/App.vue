@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted } from "@vue/runtime-core";
+import { GetList } from "@/api/video_blog";
 const love = () => {
   !(function (e, t, a) {
     function r() {
@@ -87,8 +88,15 @@ const love = () => {
   })(window, document);
 };
 
+let dataList;
+const test = async () => {
+  dataList = await GetList();
+  console.log(dataList);
+};
+
 onMounted(() => {
   // love();
+  test();
 });
 </script>
 

@@ -9,5 +9,14 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, "src")
     }
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8081', // 后端接口地址
+        changeOrigin: true, // 是否允许跨域
+        rewrite: (path) => path.replace(/^\/api/, '') // 重写路径
+      }
+    }
   }
 })

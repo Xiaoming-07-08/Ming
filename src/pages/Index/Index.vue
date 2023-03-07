@@ -1,6 +1,4 @@
 <template>
-
-
   <!-- 主要内容 -->
   <div class="container content zz">
     <!-- 占位符 -->
@@ -170,7 +168,7 @@
           <div class="borderbotm"></div>
           <span>02</span>
         </h3>
-        <div class="carbox li3-box">
+        <!-- <div class="carbox li3-box">
           <div class="play-buttom" id="playbuttom">
             <span
               ><svg
@@ -192,7 +190,16 @@
                 ></path></svg
             ></span>
           </div>
-        </div>
+        </div> -->
+
+        <video
+          id="myVideoTwo"
+          poster="@/assets/img/videoback.jpg"
+          :controls="isPlaying"
+          @click="videoPlayer"
+        >
+          <source src="@/assets/img/WhyDon'tWe.mp4" type="video/mp4" />
+        </video>
       </div>
       <!-- 我的能力 -->
       <div class="content-li li4">
@@ -235,11 +242,11 @@
                 p-id="1642"
               ></path>
             </svg>
-            <h4>UI设计</h4>
+            <h4>拓展能力</h4>
             <p>
-              UI排版<br />
-              响应式页面<br />
-              静态页面、动画效果<br />
+              geoserver+postgreSQL<br />
+              Three.js<br />
+              blender<br />
             </p>
             <a>ORDER NOW</a>
           </div>
@@ -365,9 +372,8 @@
             </svg>
             <h4>后端</h4>
             <p>
-              nodjes+express+mysql<br />
-              koa<br />
-              socket<br />
+              Java+Mysql+SpringBoot<br />
+              Mybatisplus<br />
             </p>
             <a>ORDER NOW</a>
           </div>
@@ -410,7 +416,7 @@
             <div class="borderbotm"></div>
             <p>web网站.</p>
             <p>vue、uniapp.</p>
-            <p>nodejs+koa+mysql</p>
+            <p>springBoot+Mysql</p>
             <p class="throughline">毕业论文.</p>
             <button class="buttonsty">聘用</button>
           </div>
@@ -426,11 +432,20 @@
 </template>
 
 <script setup>
-import { defineComponent, onMounted, ref } from "vue";
+import { defineComponent, onMounted, ref, reactive, onBeforeMount } from "vue";
 const mycard = ref(null);
+let video;
 onMounted(() => {
+  // 初始化视频播放器
+  video = document.getElementById("myVideoTwo");
   ScrollStick();
 });
+let isPlaying = ref(true);
+const videoPlayer = () => {
+  video.play();
+  isPlaying.value = !isPlaying.value;
+};
+
 const CardStick = ref(false);
 const ScrollStick = () => {
   window.onscroll = function () {

@@ -159,6 +159,7 @@ img {
 
 /* 顶部栏目 */
 .header {
+  z-index: 99999;
   position: fixed;
   top: 0px;
   width: 100%;
