@@ -28,7 +28,6 @@
   /* Dark Theme Variables */
   --color-text-dark: #FAF4E5;
   --color-background-dark: #8395CD;
-
 }
 
 .light-theme {
@@ -373,6 +372,8 @@ img {
   /* background-color: #45454566; */
   min-height: 50px;
 }
+
+
 
 .co {
   width: 70%;

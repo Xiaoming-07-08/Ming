@@ -80,8 +80,28 @@
         <h1>Don’t let the past steal your present</h1>
         <a class="buttom navbtn" href="#next-one">了解一下这些项目吧 </a>
       </div>
-
-      <!-- 经验页 -->
+    </div>
+  </div>
+  <!-- 经验页 -->
+  <div class="exp-container">
+    <div
+      class="co-mid exp-title"
+      v-show="$route.fullPath == '/home/experience'"
+    >
+      <h1>Don’t let the past steal your present</h1>
+      <a class="buttom navbtn" href="#next-one">了解一下这些项目吧 </a>
+      <div class="card">
+        <div class="card-content">
+          <div class="tag-title center-align">
+            <tags-filled class="tags-icon" />
+            文章标题</div>
+          <div class="tag-chips">
+            <a href="#" title="资源" v-for="i in 19">
+              <span class="chip">资源</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="header borderafter">
@@ -161,6 +181,7 @@ import { addColor } from "@/hooks/addColor";
 import { defineComponent, onMounted, ref } from "vue";
 import { SettingFilled } from "@ant-design/icons-vue";
 import { useRouter } from "vue-router";
+import { TagsFilled } from "@ant-design/icons-vue";
 const router = useRouter();
 onMounted(() => {
   LightFlag.value = localStorage.getItem("theme") == "black" ? false : true;
