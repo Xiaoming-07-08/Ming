@@ -25,7 +25,6 @@ instance.interceptors.response.use(
     response => {
         // 对响应数据做点什么，比如剥离无效数据，处理token失效等
         const { data } = response;
-        console.log(data);
         if (data.code == 200) {
             console.log(111);
             return data.data; // 返回有效数据

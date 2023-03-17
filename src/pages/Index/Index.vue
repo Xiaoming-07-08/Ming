@@ -198,7 +198,7 @@
           :controls="isPlaying"
           @click="videoPlayer"
         >
-          <source src="@/assets/img/WhyDon'tWe.mp4" type="video/mp4" />
+          <source src="@/assets/img/testvideo.mp4" type="video/mp4" />
         </video>
       </div>
       <!-- 我的能力 -->

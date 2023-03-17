@@ -6,7 +6,7 @@
         "--headerhover": "rgb(0, 40, 58,.8)",
         "--headerFont": "#fff",
         "--fontColor": "#00283a",
-        "--mainColor": "#050404",
+        "--mainColor": "#ff8181",
         "--bagColor": "#02162b",
         "--SwitchBgColor": "#fff",
         "--SwitchBtnColor": "#00283a"

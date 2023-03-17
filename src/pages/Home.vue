@@ -1,6 +1,4 @@
 <template>
-
-
   <!-- 灯笼 -->
   <div class="light-box" v-show="!LightFlag">
     <div class="deng-box2">
@@ -82,6 +80,9 @@
         <h1>Don’t let the past steal your present</h1>
         <a class="buttom navbtn" href="#next-one">了解一下这些项目吧 </a>
       </div>
+
+      <!-- 经验页 -->
+      
     </div>
   </div>
   <div class="header borderafter">
