@@ -82,7 +82,6 @@
       </div>
 
       <!-- 经验页 -->
-      
     </div>
   </div>
   <div class="header borderafter">
@@ -111,11 +110,16 @@
       <!-- 右边操作栏 -->
       <div class="header-right">
         <!-- 按钮 -->
-        <div class="min_menu-wrap" id="minmenu">
+        <div
+          class="min_menu-wrap"
+          :class="menuActive ? 'active' : ''"
+          id="minmenu"
+          @click="menuClick"
+        >
           <span class="min_menu"></span>
         </div>
         <!-- 列表 -->
-        <div class="menu_list">
+        <div class="menu_list" :class="menuActive ? 'active' : ''">
           <!-- 栏目 -->
           <ul class="header-nav">
             <li v-for="nav in navList" :class="{ active: activeId === nav.id }">
@@ -190,7 +194,13 @@ const initId = () => {
     return item.path == router.currentRoute.value.path;
   });
   activeId = currentNav.id;
-  console.log(1);
+};
+
+// 响应式遮罩层
+let menuActive = ref(false);
+const menuClick = () => {
+  menuActive.value = !menuActive.value;
+  console.log();
 };
 </script>
 

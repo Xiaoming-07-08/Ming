@@ -796,6 +796,7 @@ img {
 }
 
 .min_menu-wrap {
+  cursor: pointer;
   min-width: 50px;
 }
 
