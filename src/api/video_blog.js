@@ -7,3 +7,10 @@ export const GetList = (params) => {
     })
 }
 
+export const GetCategoryList = (params) => {
+    return request({
+        url: '/category/list',
+        params
+    })
+}
+

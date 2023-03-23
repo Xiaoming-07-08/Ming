@@ -292,8 +292,6 @@
   border-radius: 10px;
   box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
   position: relative;
-  margin: 0.5rem 0 1rem 0;
-  /* background-color: rgba(255, 255, 255, .5); */
   background-color: var(--headerCOlor);
   margin: 60px auto;
   width: 90%;
@@ -302,7 +300,9 @@
 
 
 .card-content {
-  padding: 24px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 34px 24px;
   border-radius: 0 0 2px 2px;
 }
 
@@ -329,7 +329,7 @@
 }
 
 .tag-chips a {
-  color: #039be5;
+  color: #000;
   -webkit-tap-highlight-color: transparent;
   background-color: transparent;
   cursor: pointer;
@@ -338,7 +338,6 @@
 }
 
 .tag-chips .chip {
-  background-color: #F9EBEA;
   margin: 10px 10px;
   padding: 19px 14px;
   display: inline-flex;
@@ -350,8 +349,24 @@
   box-shadow: 0 3px 5px rgba(0, 0, 0, .12);
 }
 
-.tag-chips .chip:hover{
+.tag-chips .chip:hover {
   background-color: #ff8181;
   color: #fff;
-  transition: .5s ;
+  transition: .5s;
+}
+
+.add-category {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: #ff8181 !important;
+  display: none;
+  cursor: pointer;
+}
+
+.card:hover .add-category {
+  display: block;
+  animation: 1s ease;
 }

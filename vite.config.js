@@ -13,9 +13,9 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://8.130.108.100:8081/', // 后端接口地址
-        changeOrigin: true, // 是否允许跨域
-        rewrite: (path) => path.replace(/^\/api/, '') // 重写路径
+        target: 'http://8.130.108.100:8081',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
       }
     }
   }

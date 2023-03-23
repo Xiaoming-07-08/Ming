@@ -86,24 +86,32 @@
   <div class="exp-container">
     <div
       class="co-mid exp-title"
-      v-show="$route.fullPath == '/home/experience'"
+      v-show="$route.fullPath == '/home/blog'"
     >
       <h1>Don’t let the past steal your present</h1>
-      <a class="buttom navbtn" href="#next-one">了解一下这些项目吧 </a>
+      <a class="buttom navbtn" href="#next-one">了解一下这些内容吧 </a>
       <div class="card">
         <div class="card-content">
           <div class="tag-title center-align">
             <tags-filled class="tags-icon" />
-            文章标题</div>
+            文章标题
+          </div>
           <div class="tag-chips">
-            <a href="#" title="资源" v-for="i in 19">
-              <span class="chip">资源</span>
+            <a
+              href="#"
+              :title="cat.name"
+              v-for="cat in CategoryList"
+              :key="cat.id"
+            >
+              <span class="chip" :style="randomColor()">{{ cat.name }}</span>
             </a>
           </div>
         </div>
+        <!-- <PlusCircleTwoTone class="add-category" :color="'#ff8181'" /> -->
       </div>
     </div>
   </div>
+
   <div class="header borderafter">
     <!-- 返回按钮 -->
     <a style="position: absolute; left: 50px" href="javascript:history.back()">
@@ -178,14 +186,19 @@
 
 <script setup>
 import { addColor } from "@/hooks/addColor";
-import { defineComponent, onMounted, ref } from "vue";
-import { SettingFilled } from "@ant-design/icons-vue";
+import { defineComponent, onMounted, reactive, ref, computed } from "vue";
 import { useRouter } from "vue-router";
-import { TagsFilled } from "@ant-design/icons-vue";
+import { TagsFilled, PlusCircleTwoTone } from "@ant-design/icons-vue";
+import { GetCategoryList } from "@/api/video_blog";
 const router = useRouter();
 onMounted(() => {
+  // 主题颜色切换
   LightFlag.value = localStorage.getItem("theme") == "black" ? false : true;
+  // 初始化页面
   initId();
+  // 初始化分类数组
+  getGList();
+  console.log(CategoryList);
 });
 // 主题切换
 const isBlack = ref(true);
@@ -196,15 +209,13 @@ const changeBlack = () => {
   addColor(false);
   console.log(LightFlag.value);
 };
-
 const navList = [
   { id: "01", name: "主页", path: "/home/index", titleTag: "" },
   { id: "02", name: "项目", path: "/home/project" },
-  { id: "03", name: "经验", path: "/home/experience" },
+  { id: "03", name: "博客", path: "/home/blog" },
   { id: "04", name: "联系", path: "/home/contact" },
-  { id: "05", name: "博客", path: "/blog" },
+  // { id: "05", name: "博客", path: "/blog" },
 ];
-
 let activeId = ref("00");
 const changeId = (id) => {
   activeId = id;
@@ -222,6 +233,34 @@ let menuActive = ref(false);
 const menuClick = () => {
   menuActive.value = !menuActive.value;
   console.log();
+};
+
+//经验页分类
+let CategoryList = ref([]);
+const getGList = async () => {
+  CategoryList.value = await GetCategoryList();
+};
+
+// 随机颜色
+const ColorArr = [
+  "#F9EBEA",
+  "#F5EEF8",
+  "#D5F5E3",
+  "#E8F8F5",
+  "#FEF9E7",
+  "#85C1E9",
+  "#D7BDE2",
+  "#FFC0CB",
+  "#FFA07A",
+  "#FFD700",
+  "#FF69B4",
+  "#00FFFF",
+  "#7FFFD4",
+  "#FF8C00",
+];
+const randomColor = () => {
+  let color = ColorArr[Math.floor(Math.random() * ColorArr.length)];
+  return "background-color:" + color;
 };
 </script>
 
