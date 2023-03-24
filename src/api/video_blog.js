@@ -14,3 +14,16 @@ export const GetCategoryList = (params) => {
     })
 }
 
+export const GetCategoryByID = (params) => {
+    return request({
+        url: '/category/getById',
+        params
+    })
+}
+
+export const GetBlogListByCatId = (params) => {
+    return request({
+        url: '/blog/getByCatId',
+        params
+    })
+}

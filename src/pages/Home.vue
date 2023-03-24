@@ -84,10 +84,7 @@
   </div>
   <!-- 经验页 -->
   <div class="exp-container">
-    <div
-      class="co-mid exp-title"
-      v-show="$route.fullPath == '/home/blog'"
-    >
+    <div class="co-mid exp-title" v-show="$route.fullPath == '/home/blog'">
       <h1>Don’t let the past steal your present</h1>
       <a class="buttom navbtn" href="#next-one">了解一下这些内容吧 </a>
       <div class="card">
@@ -97,14 +94,22 @@
             文章标题
           </div>
           <div class="tag-chips">
-            <a
+            <!-- <a
               href="#"
               :title="cat.name"
               v-for="cat in CategoryList"
               :key="cat.id"
             >
               <span class="chip" :style="randomColor()">{{ cat.name }}</span>
-            </a>
+            </a> -->
+            <router-link
+              :to="`/addblog/${cat.id}`"
+              class="item"
+              v-for="cat in CategoryList"
+              :style="randomColor()"
+              :title="cat.name"
+              >{{ cat.name }}</router-link
+            >
           </div>
         </div>
         <!-- <PlusCircleTwoTone class="add-category" :color="'#ff8181'" /> -->
